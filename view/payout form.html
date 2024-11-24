@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Payment Method</h2>
+        <div class="card-icons">
+            <img src="visa.png" alt="Visa">
+            <img src="mastercard.png" alt="MasterCard">
+            <img src="amex.png" alt="Amex">
+        </div>
+
+        <form>
+            <h3>Credit Card Details</h3>
+            <label for="name">Name on card</label>
+            <input type="text" id="name" name="name" placeholder="Name on card" required>
+
+            <label for="card-number">Card number</label>
+            <input type="text" id="card-number" name="card-number" placeholder="0000 0000 0000 0000" required>
+
+            <div class="flex-row">
+                <div>
+                    <label for="expiry-month">Card expiration</label>
+                    <input type="text" id="expiry-month" name="expiry-month" placeholder="Month" required>
+                </div>
+                <div>
+                    <input type="text" id="expiry-year" name="expiry-year" placeholder="Year" required>
+                </div>
+            </div>
+
+            <label for="security-code">Card Security Code</label>
+            <input type="text" id="security-code" name="security-code" placeholder="Code" required>
+
+            <h3>Billing Address</h3>
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="ca">Philippines</option>
+            </select>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Address" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="City" required>
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" placeholder="State" required>
+
+            <label for="zip">ZIP CODE</label>
+            <input type="text" id="zip" name="zip" placeholder="ZIP CODE" required>
+
+            <h3>Contact Information</h3>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+
+            <button type="submit">Pay</button>
+        </form>
+    </div>
+</body>
+</html>
